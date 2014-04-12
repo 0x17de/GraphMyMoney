@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="GraphMyMoney:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/GraphMyMoney_jar</output-path>
+    <root id="archive" name="GraphMyMoney.jar">
+      <element id="module-output" name="GraphMyMoney" />
+    </root>
+  </artifact>
+</component>

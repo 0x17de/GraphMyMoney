@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Class-Path: libs/xercesImpl.jar libs/xml-apis.jar
+Main-Class: de.icetruck.graphmymoney.Main
+
