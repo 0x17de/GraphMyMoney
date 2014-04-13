@@ -7,12 +7,12 @@ import java.util.List;
  */
 public class Transaction {
     public String id;
-    public long timestamp;
+    public String postdate;
     public List<Split> splitList;
 
-    public Transaction(String id, long timestamp, List<Split> splitList) {
+    public Transaction(String id, String postdate, List<Split> splitList) {
         this.id = id;
-        this.timestamp = timestamp;
+        this.postdate = postdate;
         this.splitList = splitList;
     }
 }

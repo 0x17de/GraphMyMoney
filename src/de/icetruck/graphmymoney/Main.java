@@ -68,10 +68,6 @@ public class Main {
         return true;
     }
 
-    public long timeStampFromPostDate(String date) {
-        return 123;
-    }
-
     public boolean loadTransactions() {
         try {
             Element transactionsNode = (Element)xpath.evaluate("//TRANSACTIONS", doc, XPathConstants.NODE);
@@ -90,7 +86,7 @@ public class Main {
                     splitList.add(new Split(splitElement.getAttribute("id"), splitElement.getAttribute("payee"), splitElement.getAttribute("bankid"), splitElement.getAttribute("account"), splitElement.getAttribute("shares")));
                 }
 
-                transactionList.add(new Transaction(transactionElement.getAttribute("id"), timeStampFromPostDate(transactionElement.getAttribute("postdate")), splitList));
+                transactionList.add(new Transaction(transactionElement.getAttribute("id"), transactionElement.getAttribute("postdate"), splitList));
             }
             System.out.println(String.format("Loaded %d of %d transactions", transactionList.size(), transactionNodes.getLength()));
         } catch (XPathExpressionException e) {
@@ -105,6 +101,8 @@ public class Main {
         xpath = XPathFactory.newInstance().newXPath();
         if (!loadPayeeIdToNameMap()) return ErrorType.WRONG_XPATH;
         if (!loadTransactions()) return ErrorType.WRONG_XPATH;
+
+        TransactionGraph.write(this, "output/transactions.csv");
 
         return ErrorType.OK;
     }
