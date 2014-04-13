@@ -12,12 +12,15 @@ import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Created by hans on 13.04.14.
  */
 public class Main {
     public HashMap<String, String> nameToIdMap = new HashMap<String, String>();
+    public List<Transaction> transactionList = new LinkedList<Transaction>();
     public Document doc;
     public XPath xpath;
 
@@ -43,7 +46,8 @@ public class Main {
     public static enum ErrorType {
         OK,
         LOAD_DOCUMENT,
-        WRONG_XPATH
+        WRONG_XPATH,
+        UNKNOWN
     }
 
     public boolean loadPayeeIdToNameMap() {
@@ -56,6 +60,39 @@ public class Main {
                 Element e = (Element)payeeNodes.item(i);
                 nameToIdMap.put(e.getAttribute("id"), e.getAttribute("name"));
             }
+            System.out.println(String.format("Loaded %d of %d payees", nameToIdMap.size(), payeeNodes.getLength()));
+        } catch (XPathExpressionException e) {
+            e.printStackTrace();
+            return false;
+        }
+        return true;
+    }
+
+    public long timeStampFromPostDate(String date) {
+        return 123;
+    }
+
+    public boolean loadTransactions() {
+        try {
+            Element transactionsNode = (Element)xpath.evaluate("//TRANSACTIONS", doc, XPathConstants.NODE);
+            NodeList transactionNodes = (NodeList)xpath.evaluate("./TRANSACTION", transactionsNode, XPathConstants.NODESET);
+
+            for(int i = 0; i < transactionNodes.getLength(); ++i)
+            {
+                Element transactionElement = (Element)transactionNodes.item(i);
+
+                List<Split> splitList = new LinkedList<Split>();
+                Element splitsNode = (Element)xpath.evaluate("./SPLITS", transactionElement, XPathConstants.NODE);
+                NodeList splitNodes = (NodeList)xpath.evaluate("./SPLIT", splitsNode, XPathConstants.NODESET);
+
+                for(int j = 0; j < splitNodes.getLength(); ++j) {
+                    Element splitElement = (Element)splitNodes.item(j);
+                    splitList.add(new Split(splitElement.getAttribute("id"), splitElement.getAttribute("payee"), splitElement.getAttribute("shares")));
+                }
+
+                transactionList.add(new Transaction(transactionElement.getAttribute("id"), timeStampFromPostDate(transactionElement.getAttribute("postdate")), splitList));
+            }
+            System.out.println(String.format("Loaded %d of %d transactions", transactionList.size(), transactionNodes.getLength()));
         } catch (XPathExpressionException e) {
             e.printStackTrace();
             return false;
@@ -67,6 +104,7 @@ public class Main {
         if (!loadDocument(fileName)) return ErrorType.LOAD_DOCUMENT;
         xpath = XPathFactory.newInstance().newXPath();
         if (!loadPayeeIdToNameMap()) return ErrorType.WRONG_XPATH;
+        if (!loadTransactions()) return ErrorType.WRONG_XPATH;
 
         return ErrorType.OK;
     }

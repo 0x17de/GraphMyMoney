@@ -6,7 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7eed8e0-dea1-43c2-ae70-5fc8cd4e3ac7" name="Default" comment="" />
+    <list default="true" id="a7eed8e0-dea1-43c2-ae70-5fc8cd4e3ac7" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/icetruck/graphmymoney/Main.java" afterPath="$PROJECT_DIR$/src/de/icetruck/graphmymoney/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="GraphMyMoney.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -69,22 +72,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/de/icetruck/graphmymoney/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1320">
+            <state line="62" column="68" selection-start="1833" selection-end="1833" vertical-scroll-proportion="-0.60988075" vertical-offset="1288" max-vertical-offset="1890">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#529#545#0" expanded="true" />
+                <element signature="e#581#597#0" expanded="true" />
+                <element signature="e#662#675#0" expanded="true" />
+                <element signature="e#2609#2616#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MANIFEST.MF" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
+      <file leaf-file-name="Transaction.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/de/icetruck/graphmymoney/Transaction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="49" selection-start="71" selection-end="71" vertical-scroll-proportion="0.025553662" vertical-offset="0" max-vertical-offset="587">
+            <state line="10" column="4" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Split.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/de/icetruck/graphmymoney/Split.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="4" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
               <folding />
             </state>
           </provider>
@@ -103,8 +117,10 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/de/icetruck/graphmymoney/Main.java" />
         <option value="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/src/de/icetruck/graphmymoney/Split.java" />
+        <option value="$PROJECT_DIR$/src/de/icetruck/graphmymoney/Transaction.java" />
+        <option value="$PROJECT_DIR$/src/de/icetruck/graphmymoney/Main.java" />
       </list>
     </option>
   </component>
@@ -232,6 +248,11 @@
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="de.icetruck.graphmymoney" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.MainHans">
     <configuration default="false" name="MainHans" type="Application" factoryName="Application" temporary="true">
@@ -421,7 +442,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="-3" width="1924" height="1060" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -439,7 +460,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32969433" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -469,20 +490,36 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/de/icetruck/graphmymoney/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1320">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#529#545#0" expanded="true" />
-          </folding>
+        <state line="4" column="0" selection-start="115" selection-end="115" vertical-scroll-proportion="0.10221465" vertical-offset="0" max-vertical-offset="587">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
+    <entry file="file://$PROJECT_DIR$/src/de/icetruck/graphmymoney/Split.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="49" selection-start="71" selection-end="71" vertical-scroll-proportion="0.025553662" vertical-offset="0" max-vertical-offset="587">
+        <state line="8" column="4" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/icetruck/graphmymoney/Transaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="4" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/icetruck/graphmymoney/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="68" selection-start="1833" selection-end="1833" vertical-scroll-proportion="-0.60988075" vertical-offset="1288" max-vertical-offset="1890">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#581#597#0" expanded="true" />
+            <element signature="e#662#675#0" expanded="true" />
+            <element signature="e#2609#2616#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
