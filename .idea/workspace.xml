@@ -8,7 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a7eed8e0-dea1-43c2-ae70-5fc8cd4e3ac7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/icetruck/graphmymoney/Main.java" afterPath="$PROJECT_DIR$/src/de/icetruck/graphmymoney/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/icetruck/graphmymoney/Split.java" afterPath="$PROJECT_DIR$/src/de/icetruck/graphmymoney/Split.java" />
     </list>
     <ignored path="GraphMyMoney.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,10 +72,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/icetruck/graphmymoney/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="68" selection-start="1833" selection-end="1833" vertical-scroll-proportion="-0.60988075" vertical-offset="1288" max-vertical-offset="1890">
+            <state line="92" column="94" selection-start="3325" selection-end="3325" vertical-scroll-proportion="0.0" vertical-offset="1168" max-vertical-offset="1890">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#581#597#0" expanded="true" />
@@ -95,10 +95,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Split.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Split.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/de/icetruck/graphmymoney/Split.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="4" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+            <state line="9" column="4" selection-start="173" selection-end="173" vertical-scroll-proportion="0.22998296" vertical-offset="0" max-vertical-offset="587">
               <folding />
             </state>
           </provider>
@@ -118,9 +118,9 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
-        <option value="$PROJECT_DIR$/src/de/icetruck/graphmymoney/Split.java" />
         <option value="$PROJECT_DIR$/src/de/icetruck/graphmymoney/Transaction.java" />
         <option value="$PROJECT_DIR$/src/de/icetruck/graphmymoney/Main.java" />
+        <option value="$PROJECT_DIR$/src/de/icetruck/graphmymoney/Split.java" />
       </list>
     </option>
   </component>
@@ -497,10 +497,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/icetruck/graphmymoney/Split.java">
+    <entry file="file://$PROJECT_DIR$/src/de/icetruck/graphmymoney/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="4" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-          <folding />
+        <state line="92" column="94" selection-start="3325" selection-end="3325" vertical-scroll-proportion="0.0" vertical-offset="1168" max-vertical-offset="1890">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#581#597#0" expanded="true" />
+            <element signature="e#662#675#0" expanded="true" />
+            <element signature="e#2609#2616#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -511,15 +516,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/icetruck/graphmymoney/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/de/icetruck/graphmymoney/Split.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="68" selection-start="1833" selection-end="1833" vertical-scroll-proportion="-0.60988075" vertical-offset="1288" max-vertical-offset="1890">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#581#597#0" expanded="true" />
-            <element signature="e#662#675#0" expanded="true" />
-            <element signature="e#2609#2616#0" expanded="true" />
-          </folding>
+        <state line="9" column="4" selection-start="173" selection-end="173" vertical-scroll-proportion="0.22998296" vertical-offset="0" max-vertical-offset="587">
+          <folding />
         </state>
       </provider>
     </entry>

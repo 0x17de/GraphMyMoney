@@ -87,7 +87,7 @@ public class Main {
 
                 for(int j = 0; j < splitNodes.getLength(); ++j) {
                     Element splitElement = (Element)splitNodes.item(j);
-                    splitList.add(new Split(splitElement.getAttribute("id"), splitElement.getAttribute("payee"), splitElement.getAttribute("shares")));
+                    splitList.add(new Split(splitElement.getAttribute("id"), splitElement.getAttribute("payee"), splitElement.getAttribute("bankid"), splitElement.getAttribute("account"), splitElement.getAttribute("shares")));
                 }
 
                 transactionList.add(new Transaction(transactionElement.getAttribute("id"), timeStampFromPostDate(transactionElement.getAttribute("postdate")), splitList));
